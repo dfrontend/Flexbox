@@ -145,3 +145,27 @@
     order: -1;
   }
 }
+
+.container-18 {
+
+  .item {
+    /*width: 20%;*/
+    flex-grow: 1;
+  }
+  .item:nth-child(2) {
+    flex-grow: 2;
+  }
+  .item:nth-child(4) {
+    flex-grow: 8;
+  }
+}
+
+.container-19 {
+
+  .item {
+    width: 400px;
+  }
+  .item:nth-child(2) {
+    flex-shrink: 2;
+  }
+}
