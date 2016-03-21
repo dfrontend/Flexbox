@@ -120,3 +120,28 @@
     width: 20%;
   }
 }
+
+.container-16 {
+  height: 250px;
+  flex-wrap: wrap;
+  align-content: space-between; /*vertically*/
+  flex-direction: column;
+
+  .item {
+    height: initial;
+    width: 20%;
+  }
+}
+
+.container-17 {
+
+  .item {
+    width: 20%;
+  }
+  .item:nth-child(2) {
+    order: 1;
+  }
+  .item:nth-child(4) {
+    order: -1;
+  }
+}
