@@ -169,3 +169,23 @@
     flex-shrink: 2;
   }
 }
+
+.container-20 {
+  .item {
+    width: 150px;
+  }
+  .item:nth-child(2) {
+    flex-basis: 50px;
+  }
+}
+.container-21 {
+  flex-direction: column;
+  .item {
+    width: 150px;
+  }
+  .item:nth-child(2) {
+    height: initial;
+    line-height: initial;
+    flex-basis: 30px;
+  }
+}

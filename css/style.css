@@ -126,4 +126,18 @@
 .container-19 .item:nth-child(2) {
   flex-shrink: 2; }
 
+.container-20 .item {
+  width: 150px; }
+.container-20 .item:nth-child(2) {
+  flex-basis: 50px; }
+
+.container-21 {
+  flex-direction: column; }
+  .container-21 .item {
+    width: 150px; }
+  .container-21 .item:nth-child(2) {
+    height: initial;
+    line-height: initial;
+    flex-basis: 30px; }
+
 /*# sourceMappingURL=style.css.map */
