@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #385158;
+  align-items: stretch;
+
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-content:center;
+    padding: 0;
+    header {
+      background-color: antiquewhite;
+      height: 80px;
+    }
+    .content-container {
+
+      background-color: lightgreen;
+      .content-inner {
+        margin: 10% auto;
+        width: 80%;
+        background-color: cadetblue;
+        display: flex;
+        justify-content: center;
+        .inner {
+          background-color: darkolivegreen;
+          width:50%;
+          margin:20px;
+          min-height:300px;
+          .mydiv {
+            background-color: darkgrey;
+            margin: 10px;
+          }
+        }
+      }
+    }
+  }
+}
