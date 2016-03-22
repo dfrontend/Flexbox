@@ -2,7 +2,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: #385158;
-
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .main-container {
 
     header {
@@ -13,18 +16,47 @@ body {
     .content-container {
       background-color: lightgreen;
 
-
       .content-inner {
         background-color: cadetblue;
-        margin: 10% auto;
+        margin-top: 10%;
+        margin-bottom: 10%;
 
-          .mydiv {
+          .my-div {
             background-color: darkgrey;
             padding: 10px;
+            margin: 10px 0;
+
             p {
               margin: 0;
             }
           }
+
+        .flex-container {
+          display: flex;
+          flex-direction:row;
+
+          .item {
+            display: flex;
+            flex-direction: column;
+            .my-div {
+              flex-grow: 1;
+            }
+            .my-div:nth-child(2) {
+              align-self: flex-end;
+              height:105px;
+            }
+
+
+          }
+          .item.one {
+            .my-div:nth-child(1) {
+              flex-grow: 1;
+            }
+          }
+
+
+          
+        }
 
       }
     }
