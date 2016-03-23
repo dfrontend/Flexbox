@@ -1,0 +1,52 @@
+html,body {
+  padding:0;
+  margin:0;
+}
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  header, footer {
+    background-color: #666;
+    padding:10px;
+    height: 60px;
+    color: #fff;
+  }
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-grow:1;
+  }
+    .col-1,.col-2,.col-3 {
+      padding: 10px;
+    }
+    .col-1 {
+      background: lightgreen;
+      width: 120px;
+    }
+
+    .col-2 {
+      background: lightblue;
+      flex-grow:1;
+
+    }
+
+    .col-3 {
+      background: lightpink;
+      width: 200px;
+    }
+
+    .col1,.col-2 {
+
+    }
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    flex-direction: column!important;
+  }
+  .col-1,.col-3 {
+    width: auto!important;
+  }
+}
