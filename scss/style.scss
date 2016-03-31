@@ -189,3 +189,29 @@
     flex-basis: 30px;
   }
 }
+
+/*
+10px = 0.625rem
+12px = 0.75rem
+14px = 0.875rem
+16px = 1rem (base)
+18px = 1.125rem
+20px = 1.25rem
+24px = 1.5rem
+30px = 1.875rem
+32px = 2rem*/
+
+// Extra small devices (portrait phones, less than ???px)
+// No media query since this is the default in Bootstrap
+// if html {font-size: 16px};
+// Small devices (landscape phones, 34em and up )
+@media (min-width: 34em)/*544>=*/ { ... }
+
+// Medium devices (tablets, 48em and up )
+@media (min-width: 48em)/*768>=*/ { ... }
+
+// Large devices (desktops, 62em and up)
+@media (min-width: 62em)/*992>=*/ { ... }
+
+// Extra large devices (large desktops, 75em and up)
+@media (min-width: 75em)/*1200>=*/ { ... }
